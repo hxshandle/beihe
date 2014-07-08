@@ -1,0 +1,46 @@
+#top-nav{
+  height:83px;
+  width:100%;
+  top:0;
+  position:fixed;
+  display:none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index:900;
+  background:#fdfdfd;
+  .container{
+    width:1000px;
+    margin:0 auto;
+    img{
+      float:left;
+      margin-left:50px;
+    }
+    ul{
+      list-style:none;
+      li{
+        display:inline-block;
+        a{
+          font-size:14px;
+          color:#000;
+          text-decoration:none;
+          line-height:81px;
+          display:inline-block;
+          text-align:center;
+          &:hover,&.active{
+            color:#3bb3c3;
+            transition: all 0.3s ease;
+            text-decoration:underline;
+          }
+          &:after{
+            content:'';
+            display: block;
+            height: 12px;
+            width: 0px;
+            border: 1px solid #CBCBC9;
+            position: absolute;
+            top: 33px;
+          }
+        }//a
+      }//li
+    }//ul
+  }
+}

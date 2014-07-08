@@ -1,3 +1,6 @@
+$primaryColor: #3bb3c3;
+$secondaryColor: #494949;
+
 *{
   -moz-box-sizing:border-box;
   box-sizing:border-box;
@@ -22,12 +25,56 @@ ul,li{
 }
 .page-section{
   height:900px;
+  position:relative;
   .content,.container{
     width:1000px;
     margin:0 auto;
+    position:relative;
   }
+}
+a{
+  cursor:pointer;
 }
 
 .fl{
   float:left;
 }
+.absolute{
+  position:absolute;
+}
+
+@mixin cookie($img,$width,$left,$y){
+  left:#{$left};
+  width:#{$width}px;
+  height:100%;
+  background:url(#{$img}) no-repeat 0px #{$y}px;
+}
+
+@function subtraction($a,$b){
+  @return $a - $b;
+}
+
+@mixin selectorBox($width,$color,$borderColor){
+  .sbHolder{
+    width:$width;
+    border:1px solid $borderColor;
+  }
+  .sbSelector{
+    color: $color;
+    width:subtraction($width,30px);
+  }
+  .sbOptions{
+    width:$width;
+    a:link{
+      color:$color;
+    }
+  }
+}
+
+.cookies{
+  position:absolute;
+  height:100%;
+  width:100%;
+  left:0;
+  top:0;
+}// .cookies

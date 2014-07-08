@@ -22,3 +22,22 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+// Place any jQuery/helper plugins in here.
+$(function() {
+  // for tween view for contact us
+  var scrollOffSet = 0;
+  if ((navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i))) {
+    scrollOffSet = - 500;
+    $(".scroll-down").css("padding-top", "20px");
+  }
+  var scrollController = $.superscrollorama();
+
+  scrollController.addTween("#home .wrapper", TweenMax.from($("#home .wrapper"), 1, {
+    css: {
+      opacity: "0",
+      top: "100px",
+    }
+  }), 0 );
+
+
+});

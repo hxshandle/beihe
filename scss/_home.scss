@@ -1,0 +1,30 @@
+#home{
+  background-color:#F5F2E3;
+  .container{
+    text-align:center;
+  }
+  .cookies{
+    #c1-1{
+      @include cookie('../img/2/2-3.png',329,5%,200);
+    }
+    #c1-2{
+      @include cookie('../img/2/2-4.png',166,30%,200);
+    }
+    #c1-3{
+      @include cookie('../img/2/2-5.png',230,70%,200);
+    }
+  }//.cookies
+  .container{
+    .wrapper{
+      padding-top:540px;
+      position:relative;
+    }
+    .split{
+      width:420px;
+      height:0;
+      margin:0 auto;
+      border-bottom:1px solid #000;
+      margin-top:20px;
+    }
+  }//.container
+}
