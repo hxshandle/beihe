@@ -5,16 +5,17 @@
   }
   .cookies{
     #c1-1{
-      @include cookie('../img/2/2-3.png',329,5%,200);
+      @include cookie('../img/2/2-3.png',434,5%,200);
     }
     #c1-2{
-      @include cookie('../img/2/2-4.png',166,30%,200);
+      @include cookie('../img/2/2-4.png',254,30%,200);
     }
     #c1-3{
-      @include cookie('../img/2/2-5.png',230,70%,200);
+      @include cookie('../img/2/2-3.png',434,70%,500);
     }
   }//.cookies
   .container{
+    background:url(../img/2/2-2.png);
     .wrapper{
       padding-top:540px;
       position:relative;
@@ -25,6 +26,17 @@
       margin:0 auto;
       border-bottom:1px solid #000;
       margin-top:20px;
+    }
+    .cnt{
+      text-align:center;
+      width:560px;
+      margin:0 auto;
+      margin-top:20px;
+      p{
+        font-size:12px;
+        color:#000;
+        margin:0;
+      }
     }
   }//.container
 }

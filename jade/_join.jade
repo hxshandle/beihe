@@ -1,12 +1,12 @@
-- var nav = ["COMPANY PROFILE","BRAND POSITIONING","THE MAIN MARKET","BRAND FEATURE"]
-mixin bb
-  - for (var i = 0 ; i < 10; i++)
-      p 品牌设计灵感
+- var nav = ["Join Advantage","Joining support","Join conditions"]
+mixin cc
+  - for (var i = 0; i < 10;i++)
+      p.h1 设计
       p 欧式的中国元素、韩式的中国元素为核心。风格：时尚、优雅、大方，略带中性的浪漫，体现时代新女性知性、干练、优雅的气质；注重搭配，讲究以不同的组合，来配合不同的场合、不同的心情、和不同的个性；注重细节的处理，强调品质感，面料、版型讲究舒适自由。
-      p 品牌定位
+      p.h1 营销
       p 定位于中档女装，款式多样，风格时尚为销售特点，满足目标消费群的不同购买需求。市场区域和地理分布——国内大中城市及发达地区的中等城市目标——一级、二级城市商场的形象专柜和专厅；一级、二级、三级城市黄金地段、当地商业街的专卖店、商超模式店中店。
 
-.row.page-section.img-liquid-fill#about-us
+.row.page-section.img-liquid-fill#join
   img(src="img/3/2.jpg")
   .container
     .wrapper
@@ -14,26 +14,25 @@ mixin bb
       .left
         .nav-panel
           .left-edge
-          .nav-panel-cnt
-            img.about-us-brand(src="img/3/3-4.png")
+          .left-panel
+            img(src="img/6/6-1.png")
             ul
               - for (var i = 0; i < nav.length;i++)
+                - var ref = nav[i].replace(/\s/g,'_').toLowerCase()
                 li
-                  - var ref = nav[i].replace(/\s/g,'_').toLowerCase()
-                  a.nav-item(data-ref='#{ref}') #{nav[i]}
+                  a.nav-item(data-ref='#{ref}') #{nav[i].toUpperCase()}
+
       .right
         .right-inner
-          .left-edge
+          .top-edge
           .cnt-wrapper
-            - for(var i = 0 ; i < nav.length;i++ )
-              - var title = nav[i].toLowerCase();
-              - var _id = title.replace(/\s/g,'_');
-              - var t = title.substring(0,1).toUpperCase()+title.substring(1)
-              .display-entry(id="disp-entry-#{_id}")
-                .header
-                  img.header-top(src="img/3/3-7.png")
-                  .title #{t}
-                  img.header-bottom(src="img/3/3-8.png")
+            - for (var i = 0;i<nav.length;i++)
+              - var id = nav[i].replace(/\s/g,'_').toLowerCase()
+              .join-entry
+                .title 加盟优势 Join advantage
                 .article
-                  +bb()
-          .right-edge
+                  +cc()
+
+              
+          .bottom-edge
+

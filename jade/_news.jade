@@ -1,0 +1,40 @@
+
+.row.page-section.img-liquid-fill#news
+  img(src="img/3/2.jpg")
+  .container
+    .wrapper
+      .line
+      .left
+        .nav-panel
+          .left-edge
+          .left-panel
+            img(src="img/5/5-5.png")
+      .right
+        .right-inner
+          .article.fl
+            - for (var i = 0; i < 20;i++)
+              .news-entrys(id="news-entry-#{i}")
+                .title 荣获2013年度十大优秀设计师-#{i}-1
+                .cnt
+                  p 钡禾自2006年成立以来，迅速
+                  p 打开华北、华东、华南、西北、西南等市场，
+                  p 在全国二、三类主要... 
+                    a(href="#more") 更多>>
+                .title.second 荣获2013年度十大优秀设计师-#{i}-2
+                .cnt
+                  p 钡禾自2006年成立以来，迅速
+                  p 打开华北、华东、华南、西北、西南等市场，
+                  p 在全国二、三类主要... 
+                    a(href="#more") 更多>>
+
+          .news-list.fl
+            ul#news-list
+              - for (var i = 0 ; i < 20; i++)
+                li 
+                  a(data-ref="news-entry-#{i}")
+                    span.seq #{i+1}
+                    span.txt 荣获2011年度中国服装优秀渠道奖-#{i}
+            .holder
+
+
+

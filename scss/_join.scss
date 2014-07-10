@@ -1,0 +1,87 @@
+#join{
+  .container{
+    .wrapper{
+      position:relative;
+      padding-top:200px;
+      .line{
+        width: 0;
+        border-right: 2px solid #fff;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 123px;
+      }
+      .left{
+        float:left;
+        width:203px;
+        margin-right:10px;
+        .nav-panel{
+          height:407px;
+          .left-edge{
+            float:left;
+            width:43px;
+            height:100%;
+            background:url(../img/5/5-6.png);
+          }//.left-edge
+          .left-panel{
+            float:left;
+            background:#fff;
+            height:100%;
+            width:160px;
+            padding-left:12px;
+            img{
+              padding-top:60px;
+              padding-bottom:40px;
+            }
+            li{
+              margin:6px 0;
+            }
+            .nav-item{
+              color:$secondaryColor;
+              font-size:10px;
+              &.active,&:hover{
+                color:$primaryColor;
+              }
+            }//.nav-item
+          }//.left-panel
+        }//.nav-panel
+        
+      }//.left
+      .right{
+        float:left;
+        .right-inner{
+          .top-edge{
+            width:787px;
+            height:43px;
+            background:url(../img/6/6-2.png);
+            margin-top:-43px;
+          }
+          .bottom-edge{
+            width:787px;
+            height:43px;
+            background:url(../img/6/6-3.png);
+          }
+          .cnt-wrapper{
+            width:787px;
+            background:#fff;
+            height:407px;
+            font-size:12px;
+            color:#999;
+            .join-entry{
+              width:530px;
+              margin: 0 auto;
+            }
+            p.h1,.title{
+              color:$primaryColor;
+            }
+            .title{
+              font-size:16px;
+              padding-bottom:30px;
+              padding-top:70px;
+            }
+          }
+        }//.right-inner
+      }//.right
+    }//.wrapper
+  }
+}

@@ -1,5 +1,6 @@
 $primaryColor: #3bb3c3;
-$secondaryColor: #494949;
+$secondaryColor: #999;
+$primaryFont:"Gabriola";
 
 *{
   -moz-box-sizing:border-box;
@@ -30,6 +31,7 @@ ul,li{
     width:1000px;
     margin:0 auto;
     position:relative;
+    height:100%;
   }
 }
 a{

@@ -1,10 +1,21 @@
 #about-us{
-  background:#333;
   .container{
     .wrapper{
+      position:relative;
+      padding-top:200px;
+      .line{
+        width: 0;
+        border-right: 2px solid #fff;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 213px;
+      }
       .left{
         float:left;
-        width:400px;
+        width:213px;
+        margin-left:90px;
+        margin-right:50px;
         .nav-panel{
           height:407px;
           .left-edge{
@@ -17,19 +28,28 @@
             float:left;
             background:#fff;
             height:100%;
-            width:300px;
+            width:170px;
+            padding-left:12px;
+            padding-top:90px;
+            .about-us-brand{
+              margin-bottom:35px;
+            }
+            li{
+              margin:6px 0;
+            }
             .nav-item{
               color:$secondaryColor;
+              font-size:10px;
               &.active,&:hover{
                 color:$primaryColor;
               }
-            }
+            }//.nav-item
           }
         }//.nav-panel
       }//.left
       .right{
         float:left;
-        width:600px;
+        width:640px;
         height:407px;
         .right-inner{
           width:100%;
@@ -48,16 +68,45 @@
           }
           .cnt-wrapper{
             height:100%;
-            width:514px;
+            width:535px;
             float:left;
             background:#fff;
+            overflow:hidden;
+            .display-entry{
+              display:none;
+              .jspVerticalBar{
+                width:15px;
+                background:none;
+              }
+              .jspTrack{
+                background:url(../img/3/3-6.png) repeat-y 5px 0;
+              }
+              .jspDrag{
+                background:url(../img/3/3-5.png);
+              }
+            }
             .header{
               text-align:center;
+              padding-top:40px;
+              padding-bottom:40px;
+              img{
+                width:223px;
+              }
               .title{
                 color:$primaryColor;
+                font-family:$primaryFont;
+                font-size:22px;
+                line-height:60px;
               }
             }//.header
-          }
+            .article{
+              height:120px;
+              width:280px;
+              margin:0 auto;
+              font-size:10px;
+              color:#666;
+            }//.article
+          }//.cnt-wrapper
         }//.right-inner
       }//.right
     }//.wrapper
