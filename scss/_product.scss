@@ -1,0 +1,149 @@
+#product{
+  .cookies{
+    #c2-1{
+      @include cookie('../img/4/4-8.png',177,1%,500);
+    }
+    #c2-2{
+      @include cookie('../img/2/2-3.png',434,60%,200);
+    }
+  }
+  .container{
+    .wrapper{
+      position:relative;
+      padding-top:200px;
+      .line{
+        width: 0;
+        border-right: 2px solid #fff;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 123px;
+      }
+      .left{
+        float:left;
+        width:203px;
+        margin-right:10px;
+        .nav-panel{
+          height:407px;
+          .left-edge{
+            float:left;
+            width:43px;
+            height:100%;
+            background:url(../img/5/5-6.png);
+          }//.left-edge
+          .left-panel{
+            float:left;
+            background:#fff;
+            height:100%;
+            width:160px;
+            padding-left:12px;
+            img{
+              padding-top:60px;
+              padding-bottom:40px;
+            }
+            li{
+              margin:6px 0;
+            }
+            .nav-item{
+              color:$secondaryColor;
+              font-size:10px;
+              &.active,&:hover{
+                color:$primaryColor;
+              }
+            }//.nav-item
+          }//.left-panel
+        }//.nav-panel
+      }//.left
+      .right{
+        .right-inner{
+          .disp-section{
+            .holder{
+              float:left;
+              width:15px;
+              .jp-previous{
+                width:15px;
+                height:45px;
+                display:inline-block;
+                margin:80px 0 -90px 0;
+                background:url(../img/4/4-12.png) no-repeat 1px 20px #fff;
+                &:hover{
+                background:url(../img/4/4-11.png) no-repeat 1px 20px #fff;
+                }
+              }
+              .jp-next{
+                width:15px;
+                height:45px;
+                display:inline-block;
+                margin:0;
+                background:url(../img/4/4-13.png) no-repeat 1px 20px #fff;
+                &:hover{
+                background:url(../img/4/4-14.png) no-repeat 1px 20px #fff;
+                }
+              }
+            }
+            .series,.large{
+              float:left;
+              a{
+                margin:0 10px 10px 0;
+                display:inline-block;
+              }
+            }//.series
+            .collocation{
+              .big-show{
+                width:450px;
+                height:650px;
+                margin-right:10px;
+                margin-left:20px;
+              }
+              a{
+                margin:0 3px 3px 0;
+                display:inline-block;
+                width:110px;
+                height:160px;
+                position:relative;
+                .mask{
+                  background:url(../img/image-tour-mask-bg.png);
+                  display:none;
+                  width:100%;
+                  height:100%;
+                  left:0;
+                  top:0;
+                }
+                .search-icon{
+                  left:40px;
+                  top:60px;
+                }
+                .search-icon,.mask{
+                  display:none;
+                  position:absolute;
+                }
+                &:hover{
+                  .search-icon,.mask{
+                    display:block;
+                  }
+                }
+
+              }
+
+              .holder{
+                margin-left:9px;
+                a{
+                  display:none;
+                }
+                .jp-previous,.jp-next{
+                  display:inline-block;
+                }
+                .jp-previous{
+                  margin:0;
+                }
+              }
+
+            }//.collocation
+            
+          }//.disp-section
+        }//.right-inner
+      }//.right
+
+    }
+  }
+}

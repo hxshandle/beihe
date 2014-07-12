@@ -1,4 +1,12 @@
 #news{
+  .cookies{
+    #c4-1{
+      @include cookie('../img/4/4-8.png',177,1%,500);
+    }
+    #c4-2{
+      @include cookie('../img/2/2-3.png',434,70%,400);
+    }
+  }
   .container{
     .wrapper{
       position:relative;

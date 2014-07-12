@@ -1,0 +1,86 @@
+#store{
+  .cookies{
+    #c6-1{
+      @include cookie('../img/7/7-8.png',301,2%,200);
+    }
+    #c6-2{
+      @include cookie('../img/7/7-10.png',451,70%,400);
+    }
+  }//.cookies
+  .container{
+    .wrapper{
+      position:relative;
+      padding-top:150px;
+      .line{
+        width:0px;
+        height:150px;
+        border-right:1px solid #fff;
+        position:absolute;
+        left:50%;
+        top:0;
+      }
+      .top-edge{
+        height:43px;
+        width:1000px;
+        background:url(../img/7/7-1.png)
+      }
+      .cnt{
+        background:#fff;
+        height:482px;
+        .header-nav{
+          heigth:75px;
+          .brand{
+            margin-top:15px;
+            margin-left:70px;
+          }
+          .nav{
+            margin-left:350px;
+            .pre,.next{
+              display:inline-block;
+              width:13px;
+              height:25px;
+              margin:27px 30px 0 30px;
+            }
+            .pre{
+              background:url(../img/7/7-4.png) no-repeat;
+              &:hover{
+              background:url(../img/7/7-3.png) no-repeat;
+              }
+            }
+            .next{
+              background:url(../img/7/7-6.png) no-repeat;
+              &:hover{
+              background:url(../img/7/7-5.png) no-repeat;
+              }
+            }
+          }//.nav
+          .address{
+            font-size:13px;
+            color:#999;
+            padding-top:33px;
+          }
+          .sel-box{
+            margin-top:25px;
+            margin-right:30px;
+            float:right;
+            font-size:12px;
+            .sbOptions{
+              z-index:99;
+            }
+            @include selectorBox(70px,#333,transparent)
+          }
+
+        }//.hader-nav
+
+        .city-stores{
+          padding-top:74px;
+          .sliders{
+            display:none;
+            width:1000px;
+            height:407px;
+          }
+        }//.city-store
+      }
+    }//.wrapper
+  }
+}

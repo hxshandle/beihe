@@ -1,0 +1,69 @@
+- var nav =["Spring Series","Summer Series","Fall Series","Winter Series","Collocation","Large","Video"]
+- var imgs1 = ['15','16','17']
+- var imgs2 = ['5','6']
+
+mixin series(id)
+  ul.series(id=id)
+    - for (var i = 0; i < 10;i++)
+      li
+        - for (var k = 0; k< imgs1.length;k++)
+          a(data-ref="img/4/4-#{imgs1[k]}.png")
+            img(src="img/4/4-#{imgs1[k]}.png")
+  .holder
+mixin large
+  ul.large-show.fl(id='large-list')
+    - for (var i = 0; i < 10;i++)
+      li
+        - for (var k = 0; k< imgs1.length;k++)
+          a(data-ref="img/4/4-#{imgs1[k]}.png")
+            img(src="img/4/4-#{imgs1[k]}.png")
+  .holder
+
+mixin collcation
+  .pod.fl
+    img.big-show(src="img/_.png")
+  ul#collocation-list.fl
+    - for (var i = 0; i < 10 ; i++)
+      li
+        - for (var k = 0; k< imgs2.length;k++)
+          a(data-ref="img/4/4-#{imgs2[k]}.png")
+            img(src="img/4/4-#{imgs2[k]}.png")
+            .mask
+            img.search-icon(src="img/4/4-3.png")
+  .holder.fl
+
+
+
+.row.page-section.img-liquid-fill#product
+  img(src="img/3/2.jpg")
+  .cookies
+    .cookie.absolute#c2-1
+    .cookie.absolute#c2-2
+  .container
+    .wrapper
+      .line
+      .left
+        .nav-panel
+          .left-edge
+          .left-panel
+            img(src="img/4/4-1.png")
+            ul
+              - for (var i = 0; i < nav.length;i++)
+                - var ref = nav[i].replace(/\s/g,'_').toLowerCase()
+                li
+                  a.nav-item(data-ref='#{ref}') #{nav[i].toUpperCase()}
+      .right
+        .right-inner
+          - for (var i = 0; i < nav.length;i++)
+            - var id = nav[i].replace(/\s/g,'_').toLowerCase()
+            - var listId = id+'-list'
+            .disp-section(id="#{id}")
+              if i < 4
+                +series(listId)
+              if i == 4
+                .collocation
+                  +collcation()
+              if i == 5
+                .large
+                  +large()
+          

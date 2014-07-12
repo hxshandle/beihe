@@ -1,4 +1,12 @@
 #join{
+  .cookies{
+    #c5-1{
+      @include cookie('../img/6/6-4.png',212,10%,200);
+    }
+    #c5-2{
+      @include cookie('../img/6/6-5.png',301,70%,200);
+    }
+  }//.cookies
   .container{
     .wrapper{
       position:relative;
@@ -70,7 +78,16 @@
             .join-entry{
               width:530px;
               margin: 0 auto;
-            }
+              display:none;
+              &.active{
+                //display:block;
+              }
+              .article{
+                height:245px;
+
+                @include jScrollBar()
+              }
+            }//.join-entry
             p.h1,.title{
               color:$primaryColor;
             }

@@ -1,0 +1,32 @@
+- var city=["上海","北京","广州","深圳"]
+- var addr = ["地址1","地址2","地址3","地址4"]
+.row.page-section.img-liquid-fill#store
+  img(src="img/3/2.jpg")
+  .cookies
+    .cookie.absolute#c6-1
+    .cookie.absolute#c6-2
+  .container
+    .wrapper
+      .line
+      .top-edge
+      .cnt
+        .header-nav
+          img.fl.brand(src="img/7/7-9.png")
+          .nav.fl
+            a.pre
+            a.next
+          .sel-box.fr#address-sel-box
+            select#city-sel
+              - for (var i = 0; i < city.length ; i++)
+                option(value="city-#{i}") #{city[i]}
+          span.address.fr
+        .clear
+        .city-stores
+          - for (var k = 0 ; k < city.length; k++)
+            ul.sliders(id="city-#{k}")
+              - for (var i = 0; i < 10; i ++)
+                li
+                  a(data-ref="img/7/7-2.png" data-addr="城市-#{k}-地址-#{i}")
+                    img(src="img/7/7-2.png")
+                    .mask
+                    img.search-icon(src="img/4/4-3.png")

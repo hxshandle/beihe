@@ -1,4 +1,6 @@
 $(function(){
+  $('#c3-1').parallax(0, 0.3, 1800);
+  $('#c3-2').parallax(0, 0.2, 2500, true);
   var $root = $('#about-us');
   $('.display-entry:first',$root).show().addClass('active');
   $('a.nav-item:first',$root).addClass('active');

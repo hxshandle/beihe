@@ -1,4 +1,12 @@
 #about-us{
+  .cookies{
+    #c3-1{
+      @include cookie('../img/4/4-8.png',177,1%,500);
+    }
+    #c3-2{
+      @include cookie('../img/3/3-9.png',362,70%,200);
+    }
+  }
   .container{
     .wrapper{
       position:relative;

@@ -1,7 +1,9 @@
 $(function() {
+  $('#c4-1').parallax(0, 0.3, 1800);
+  $('#c4-2').parallax(0, 0.2, 2500, true);
   $('#news .news-entrys:first').addClass('active');
   $('#news-list li a:first').addClass('active');
-  $('.holder').jPages({
+  $('#news .holder').jPages({
     containerID: 'news-list',
     perPage: 7,
     links: 'blank',

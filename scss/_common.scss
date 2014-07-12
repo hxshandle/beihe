@@ -41,6 +41,9 @@ a{
 .fl{
   float:left;
 }
+.fr{
+  float:right;
+}
 .absolute{
   position:absolute;
 }
@@ -70,6 +73,18 @@ a{
     a:link{
       color:$color;
     }
+  }
+}
+
+@mixin jScrollBar(){
+  .jspVerticalBar{
+    background:none;
+  }
+  .jspDrag{
+    background:#999;
+  }
+  .jspTrack{
+    background:url(../img/6/scroll-gb.png) repeat-y 2px 0 ;
   }
 }
 
