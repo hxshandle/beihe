@@ -44,7 +44,7 @@ $(function() {
     $(sel).data('hasJPages', true);
   }
 
-  $('.disp-section .series:first', $root).each(function() {
+  $('.disp-section .collocation:first', $root).each(function() {
     var $this = $(this);
     var listId = $this.attr('id');
     var parentId = $this.parent().attr('id');

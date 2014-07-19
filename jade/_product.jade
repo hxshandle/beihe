@@ -1,4 +1,4 @@
-- var nav =["Spring Series","Summer Series","Fall Series","Winter Series","Collocation","Large","Video"]
+- var nav =["Collocation","Spring Series","Summer Series","Fall Series","Winter Series","Large","Video"]
 - var imgs1 = ['15','16','17']
 - var imgs2 = ['5','6']
 
@@ -58,11 +58,12 @@ mixin collcation
             - var id = nav[i].replace(/\s/g,'_').toLowerCase()
             - var listId = id+'-list'
             .disp-section(id="#{id}")
-              if i < 4
-                +series(listId)
-              if i == 4
+              if i == 0
                 .collocation
                   +collcation()
+              if i < 5 && i > 0
+                +series(listId)
+              
               if i == 5
                 .large
                   +large()
