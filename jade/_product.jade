@@ -1,13 +1,14 @@
 - var nav =["Collocation","Spring Series","Summer Series","Fall Series","Winter Series","Large","Video"]
 - var imgs1 = ['15','16','17']
 - var imgs2 = ['5','6']
+- var videos = ["http://player.youku.com/embed/XNzMyNjc2NjAw","http://player.youku.com/embed/XNzMyNjQ5OTk2","http://player.youku.com/embed/XNzMyMzkwNTYw"]
 
 mixin series(id)
   ul.series(id=id)
     - for (var i = 0; i < 10;i++)
       li
         - for (var k = 0; k< imgs1.length;k++)
-          a(data-ref="img/4/4-#{imgs1[k]}.png")
+          a(href="img/4/4-#{imgs1[k]}.png")
             img(src="img/4/4-#{imgs1[k]}.png")
   .holder
 mixin large
@@ -15,8 +16,18 @@ mixin large
     - for (var i = 0; i < 10;i++)
       li
         - for (var k = 0; k< imgs1.length;k++)
-          a(data-ref="img/4/4-#{imgs1[k]}.png")
+          a(href="img/4/4-#{imgs1[k]}.png")
             img(src="img/4/4-#{imgs1[k]}.png")
+  .holder
+
+mixin video
+  ul.video-show.fl(id='video-list')
+    - for (var i = 0; i < 10;i++)
+      li
+        - for (var k = 0; k< imgs1.length;k++)
+          a(href="#{videos[k%3]}")
+            img(src="img/4/4-#{imgs1[k]}.png")
+            span.big-play
   .holder
 
 mixin collcation
@@ -67,4 +78,7 @@ mixin collcation
               if i == 5
                 .large
                   +large()
+              if i == 6 
+                .videos
+                  +video()
           

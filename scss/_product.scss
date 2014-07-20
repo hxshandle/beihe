@@ -81,7 +81,30 @@
                 }
               }
             }
-            .series,.large{
+            #video-list{
+              a{
+                position:relative;
+                .big-play{
+                  position:absolute;
+                  top:50%;
+                  left:50%;
+                  margin-left:-50px;
+                  margin-top:-50px;
+                  display:inline-block;
+                  width:100px;
+                  height:100px;
+                  background:url(../img/4/bigplay.png) no-repeat 0 -100px;
+                }
+                &:hover{
+                  .big-play{
+                    background:url(../img/4/bigplay.png) no-repeat;
+                  }
+                }
+
+              }
+
+            }// #video
+            .series,.large,.videos{
               float:left;
               a{
                 margin:0 10px 10px 0;
@@ -134,7 +157,10 @@
                   display:inline-block;
                 }
                 .jp-previous{
-                  margin:0;
+                  margin:80px 0 0 0;
+                }
+                .jp-next{
+                  margin-top:15px;
                 }
               }
 

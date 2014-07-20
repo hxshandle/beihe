@@ -128,6 +128,8 @@ a {
   #landing .container {
     height: 100%;
     text-align: center; }
+    #landing .container .brand {
+      margin-top: -100px; }
     #landing .container .scroll-down-icon {
       position: absolute;
       left: 50%;
@@ -628,9 +630,23 @@ a {
       background: url(../img/4/4-13.png) no-repeat 1px 20px white; }
       #product .container .wrapper .right .right-inner .disp-section .holder .jp-next:hover {
         background: url(../img/4/4-14.png) no-repeat 1px 20px white; }
-  #product .container .wrapper .right .right-inner .disp-section .series, #product .container .wrapper .right .right-inner .disp-section .large {
+  #product .container .wrapper .right .right-inner .disp-section #video-list a {
+    position: relative; }
+    #product .container .wrapper .right .right-inner .disp-section #video-list a .big-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -50px;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background: url(../img/4/bigplay.png) no-repeat 0 -100px; }
+    #product .container .wrapper .right .right-inner .disp-section #video-list a:hover .big-play {
+      background: url(../img/4/bigplay.png) no-repeat; }
+  #product .container .wrapper .right .right-inner .disp-section .series, #product .container .wrapper .right .right-inner .disp-section .large, #product .container .wrapper .right .right-inner .disp-section .videos {
     float: left; }
-    #product .container .wrapper .right .right-inner .disp-section .series a, #product .container .wrapper .right .right-inner .disp-section .large a {
+    #product .container .wrapper .right .right-inner .disp-section .series a, #product .container .wrapper .right .right-inner .disp-section .large a, #product .container .wrapper .right .right-inner .disp-section .videos a {
       margin: 0 10px 10px 0;
       display: inline-block; }
   #product .container .wrapper .right .right-inner .disp-section .collocation .big-show {
@@ -666,7 +682,9 @@ a {
     #product .container .wrapper .right .right-inner .disp-section .collocation .holder .jp-previous, #product .container .wrapper .right .right-inner .disp-section .collocation .holder .jp-next {
       display: inline-block; }
     #product .container .wrapper .right .right-inner .disp-section .collocation .holder .jp-previous {
-      margin: 0; }
+      margin: 80px 0 0 0; }
+    #product .container .wrapper .right .right-inner .disp-section .collocation .holder .jp-next {
+      margin-top: 15px; }
 
 #store .cookies #c6-1 {
   left: 2%;

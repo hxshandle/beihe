@@ -5,6 +5,9 @@ $(function(){
   $('#join .join-entry:first').addClass('active').show();
   $('#join .nav-item:first').addClass('active');
 
+  $(window).unbind('scroll');
+  $('#top-nav').show();
+
   function _doScroll(){
     $('.join-entry.active .article',$root).jScrollPane();
   }

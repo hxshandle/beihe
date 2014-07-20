@@ -328,7 +328,7 @@
 			index = 0;
 			
 			if (settings.rel !== 'nofollow') {
-				$related = $('.' + boxElement).filter(function () {
+				$related = $('.' + boxElement+':visible').filter(function () {
 					var data = $.data(this, colorbox),
 						relRelated;
 
