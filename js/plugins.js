@@ -45,20 +45,18 @@ $(function() {
       top: "100px",
     }
   }), 0);
-  /**
   scrollController.addTween("#join .wrapper", TweenMax.from($("#join .wrapper"), 1, {
     css: {
       opacity: "0",
       top: "100px",
     }
   }), 0);
-  **/
   scrollController.addTween("#contact .wrapper", TweenMax.from($("#contact .wrapper"), 1, {
     css: {
       opacity: "0",
       top: "100px",
     }
-  }), 0);
+  }), 100);
   scrollController.addTween("#product .wrapper", TweenMax.from($("#product .wrapper"), 1, {
     css: {
       opacity: "0",
